@@ -12,7 +12,6 @@ public interface ProyectoMapper {
     @Mapping(target = "id", ignore = true)
     Proyecto toEntity(ProyectoRequest proyectoRequest);
 
-    @Mapping(target = "id", ignore = true)
     ProyectoResponse toResponse(Proyecto proyecto);
 
 }

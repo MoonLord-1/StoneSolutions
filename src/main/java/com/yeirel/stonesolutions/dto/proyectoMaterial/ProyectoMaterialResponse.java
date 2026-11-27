@@ -9,8 +9,9 @@ import jakarta.persistence.ManyToOne;
 
 public record ProyectoMaterialResponse(
         Long id,
-        Proyecto proyecto,
-        Material material,
+        Long materialId,
+        String nombreMaterial,
+        String unidad,
         int cantidadUsada
 ) {
 }

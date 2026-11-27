@@ -12,6 +12,6 @@ public interface MaterialMapper {
     @Mapping(target = "id", ignore = true)
     Material toEntity(MaterialRequest materialRequest);
 
-    @Mapping(target = "id", ignore = true)
+
     MaterialResponse toResponse(Material material);
 }

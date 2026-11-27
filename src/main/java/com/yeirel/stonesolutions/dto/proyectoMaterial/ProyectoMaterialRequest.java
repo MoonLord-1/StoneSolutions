@@ -1,17 +1,16 @@
 package com.yeirel.stonesolutions.dto.proyectoMaterial;
 
-import com.yeirel.stonesolutions.entidades.Material;
-import com.yeirel.stonesolutions.entidades.Proyecto;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.PositiveOrZero;
+import jakarta.validation.constraints.Positive;
+
 
 public record ProyectoMaterialRequest(
         @NotNull
-        Proyecto proyecto,
+        Long idProyecto,
         @NotNull
-        Material material,
+        Long idMaterial,
         @NotNull
-        @PositiveOrZero(message = "Los numeros deben ser positivos.")
+        @Positive(message = "Los numeros deben ser positivos.")
         Integer cantidadUsada
 ) {
 }

@@ -14,8 +14,8 @@ public record MaterialRequest(
         String unidad,
         @NotNull
         @PositiveOrZero(message = "Los numeros deben ser positivos.")
-        int stockActual,
+        Integer stockActual,
         @NotNull
         @PositiveOrZero(message = "Los numeros deben ser positivos.")
-        int stockMinimo) {
+        Integer stockMinimo) {
 }
