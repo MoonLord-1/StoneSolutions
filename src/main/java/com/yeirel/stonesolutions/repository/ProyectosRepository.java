@@ -1,6 +1,5 @@
-package com.yeirel.stonesolutions.Repository;
+package com.yeirel.stonesolutions.repository;
 
-import com.yeirel.stonesolutions.entidades.Material;
 import com.yeirel.stonesolutions.entidades.Proyecto;
 import org.springframework.data.jpa.repository.JpaRepository;
 
